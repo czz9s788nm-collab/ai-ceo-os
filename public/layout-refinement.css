@@ -1,0 +1,178 @@
+/* 2026-08-30 · Executive information hierarchy refinement */
+main{
+  width:100%;
+  max-width:1760px;
+  margin:0 auto;
+  padding:30px clamp(28px,3.4vw,64px) 76px;
+}
+
+/* One deliberate reading order: brief → business → channels → risk → decisions → tools. */
+.topbar{order:1}
+.briefing{order:2}
+.business-section{order:3}
+.calendar-workspace{order:4}
+.channel-center{order:5}
+.risk-trend-center{order:6}
+.decision-track{order:7}
+.lower-grid{order:8}
+.ai-assistant{order:9}
+.ai-workflow{order:10}
+
+.topbar{padding-bottom:20px}
+.briefing{margin:24px 0 38px;padding:36px 32px}
+.business-section{padding:0;margin:0 0 44px}
+.schedule-panel{margin:0 0 44px}
+.channel-center{margin:0 0 44px}
+.risk-trend-center{margin:0 0 44px}
+.decision-track{margin:0 0 28px}
+.lower-grid{margin-bottom:44px}
+.ai-assistant{margin:0 0 24px}
+.ai-workflow{margin:0}
+
+/* Chapter headers are quieter and consistent, with one gold ledger mark. */
+.business-section>.section-heading,
+.channel-center>.section-heading,
+.risk-register>.section-heading,
+.monthly-trend>.section-heading,
+.decision-track>.track-head,
+.lower-grid .section-heading,
+.ai-assistant .assistant-head,
+.ai-workflow .workflow-head{
+  position:relative;
+}
+.business-section>.section-heading,
+.channel-center>.section-heading{
+  min-height:54px;
+  align-items:flex-start;
+  padding:0 0 16px 16px;
+  margin-bottom:0;
+  border-bottom:1px solid var(--line);
+}
+.business-section>.section-heading:before,
+.channel-center>.section-heading:before,
+.risk-register>.section-heading:before,
+.monthly-trend>.section-heading:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:1px;
+  width:2px;
+  height:37px;
+  background:linear-gradient(var(--amber),rgba(214,169,81,.12));
+}
+.section-heading h3,.track-head h3,.assistant-head h3{letter-spacing:.035em}
+.eyebrow{opacity:.76;letter-spacing:.2em;margin-bottom:7px}
+
+/* Daily execution stays visible between business priorities and channel operations. */
+.schedule-panel{
+  border:1px solid var(--line);
+  background:linear-gradient(115deg,rgba(7,26,40,.78),rgba(3,13,22,.62));
+  padding:24px 26px 26px;
+}
+.schedule-panel>.section-heading{
+  position:relative;
+  padding-left:16px;
+  padding-bottom:15px;
+  margin-bottom:0;
+  border-bottom:1px solid var(--line);
+}
+.schedule-panel>.section-heading:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:1px;
+  width:2px;
+  height:37px;
+  background:linear-gradient(var(--amber),rgba(214,169,81,.12));
+}
+#taskList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.schedule-panel .task{padding:17px 14px;border-top:0;border-bottom:1px solid var(--line)}
+.schedule-panel .task:nth-child(odd){border-right:1px solid var(--line)}
+.schedule-panel .task:nth-last-child(-n+2){border-bottom:0}
+
+/* Six businesses become a readable 3 × 2 command matrix. */
+.business-center-grid{
+  grid-template-columns:minmax(0,1fr) 320px;
+  border-top:0;
+  background:linear-gradient(120deg,rgba(5,19,30,.82),rgba(3,12,20,.62));
+}
+.business-strip{grid-template-columns:repeat(3,minmax(0,1fr))}
+.biz{
+  min-height:112px;
+  padding:17px 18px;
+  border-bottom:1px solid var(--line);
+}
+.biz:nth-child(3n){border-right:0}
+.biz:nth-child(n+4){border-bottom:0}
+.biz strong{font-size:14px;margin:10px 0 12px}
+.biz i{font-size:21px}
+.business-focus{grid-template-columns:82px minmax(175px,220px) 1fr;padding:14px 18px}
+.monitor-center{padding:20px}
+
+/* Channel records are the main operating canvas, not another floating card. */
+.channel-executive{margin:0;border-top:0;background:rgba(4,15,24,.68)}
+.executive-metrics>div{padding:18px}
+.executive-metrics strong{font-size:25px}
+.business-ledger{background:rgba(2,10,17,.32)}
+.channel-layout{grid-template-columns:310px minmax(0,1fr);border-top:0}
+.channel-row{padding:16px}
+.channel-detail{padding:26px 28px}
+
+/* Risk and monthly performance read as a single executive spread. */
+.risk-trend-center{gap:20px}
+.risk-register,.monthly-trend{padding:24px 26px;background:rgba(4,15,24,.68)}
+.risk-register>.section-heading,.monthly-trend>.section-heading{padding-left:16px;margin-bottom:18px}
+.risk-copy strong{font-size:14px;line-height:1.55}
+.risk-copy p{line-height:1.65}
+
+/* The back half is intentionally quieter so the operating core remains dominant. */
+.decision-track,.lower-grid>section,.ai-assistant,.ai-workflow{background:rgba(4,15,24,.58)}
+.lower-grid{gap:20px}
+.lower-grid>section{padding:24px}
+.ai-assistant{border-color:var(--line)}
+
+@media(max-width:1250px){
+  main{padding-inline:30px}
+  .business-center-grid{grid-template-columns:1fr}
+  .monitor-center{padding:18px 20px}
+  .channel-layout{grid-template-columns:285px minmax(0,1fr)}
+}
+
+@media(max-width:900px){
+  main{padding-inline:22px}
+  .business-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .biz:nth-child(3n){border-right:1px solid var(--line)}
+  .biz:nth-child(even){border-right:0}
+  .biz:nth-child(n+4){border-bottom:1px solid var(--line)}
+  .biz:nth-child(n+5){border-bottom:0}
+  .channel-layout{grid-template-columns:1fr}
+  .channel-list{border-right:0;border-bottom:1px solid var(--line)}
+}
+
+@media(max-width:720px){
+  html,body{max-width:100%;overflow-x:hidden}
+  main{padding:18px 14px 82px}
+  main>*,.brief-copy,.brief-copy h2,.section-heading>*,.business-center-grid,.channel-center,.risk-trend-center{min-width:0;max-width:100%}
+  .brief-copy h2,.brief-copy>p{overflow-wrap:anywhere;word-break:break-word}
+  .top-actions{flex-wrap:wrap;justify-content:flex-start}
+  .briefing{margin:18px 0 30px;padding:24px 18px}
+  .business-section,.schedule-panel,.channel-center,.risk-trend-center,.lower-grid{margin-bottom:32px}
+  .business-section>.section-heading,.channel-center>.section-heading{padding-left:12px;min-height:50px}
+  .business-section>.section-heading>p{display:none}
+  .section-heading h3,.track-head h3,.assistant-head h3{font-size:18px}
+  .business-strip{grid-template-columns:1fr 1fr}
+  .biz{min-height:105px;padding:15px 13px}
+  .biz strong{font-size:13px}
+  .business-focus{grid-template-columns:1fr;gap:6px}
+  .schedule-panel{padding:19px 16px}
+  .schedule-panel>.section-heading{padding-left:12px}
+  #taskList{grid-template-columns:1fr}
+  .schedule-panel .task{border-right:0!important;border-bottom:1px solid var(--line)!important;padding:16px 4px}
+  .schedule-panel .task:last-child{border-bottom:0!important}
+  .executive-metrics{grid-template-columns:repeat(2,1fr)}
+  .business-ledger{grid-template-columns:repeat(2,1fr)}
+  .channel-detail{padding:20px 16px}
+  .risk-register,.monthly-trend{padding:19px 17px}
+  .risk-register>.section-heading,.monthly-trend>.section-heading{padding-left:12px}
+  .lower-grid>section{padding:20px 16px}
+}

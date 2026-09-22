@@ -1,0 +1,6 @@
+/* The original AI CEO OS artwork remains unchanged; this only frames its symbol for the compact sidebar. */
+.brand{gap:9px}
+.brand-mark{width:34px;height:34px;overflow:hidden;position:relative;flex:none}
+.brand-mark img{position:absolute;width:52px;height:52px;max-width:none;left:-9px;top:-8px;object-fit:cover;object-position:50% 31%;filter:grayscale(1) invert(1) brightness(2);mix-blend-mode:screen}
+.brand>strong{font:700 14px "Arial Narrow","Segoe UI";letter-spacing:.11em}
+.brand>span{font-size:9px;letter-spacing:.16em;padding-left:8px}

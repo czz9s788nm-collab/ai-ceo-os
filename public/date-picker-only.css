@@ -1,0 +1,28 @@
+input[data-date-picker-only="true"] {
+  cursor: pointer !important;
+  caret-color: transparent;
+  user-select: none;
+}
+
+input[data-date-picker-only="true"]::-webkit-calendar-picker-indicator {
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  margin: -4px -2px -4px 8px;
+  cursor: pointer;
+  opacity: .92;
+  filter: invert(76%) sepia(35%) saturate(640%) hue-rotate(359deg) brightness(92%) contrast(88%);
+}
+
+input[data-date-picker-only="true"]:focus::-webkit-calendar-picker-indicator,
+input[data-date-picker-only="true"]:hover::-webkit-calendar-picker-indicator {
+  opacity: 1;
+}
+
+@media (max-width: 720px) {
+  input[data-date-picker-only="true"]::-webkit-calendar-picker-indicator {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+}

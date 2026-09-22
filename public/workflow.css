@@ -1,0 +1,15 @@
+.ai-message strong em{font-style:normal;color:var(--cyan);font:9px "Arial Narrow";margin-left:8px}
+.ai-actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.ai-actions button,.brief-artifact button{border:1px solid var(--line2);background:rgba(85,183,242,.05);color:#9dc6d9;padding:7px 10px;font-size:9px;cursor:pointer}
+.ai-actions button:hover,.brief-artifact button:hover{border-color:var(--cyan);color:var(--cyan2)}
+.ai-workflow{margin:10px 0 25px;border:1px solid var(--line);background:rgba(4,16,26,.72);padding:20px 24px}
+.workflow-title{display:grid;grid-template-columns:1fr auto;align-items:end;margin-bottom:18px}
+.workflow-title .eyebrow{grid-column:1}.workflow-title h3{margin:0;font:600 17px var(--display);letter-spacing:.05em}
+.workflow-title>span{grid-column:2;grid-row:1/3;color:var(--amber);font-size:10px;align-self:center}
+.workflow-steps{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line)}
+.flow-step{position:relative;padding:17px 14px 4px;border-right:1px solid var(--line);min-height:82px}
+.flow-step:last-child{border:0}.flow-step b,.flow-step strong,.flow-step small{display:block}
+.flow-step b{color:#436779;font:9px "Arial Narrow"}.flow-step strong{color:#819aa8;font-size:11px;margin:8px 0 4px}.flow-step small{color:#536f7f;font-size:9px}
+.flow-step:before{content:"";position:absolute;left:0;top:-2px;width:0;height:2px;background:var(--cyan);transition:.3s}.flow-step.done:before,.flow-step.active:before{width:100%}.flow-step.done b,.flow-step.active b{color:var(--cyan)}.flow-step.active strong{color:var(--text)}
+.brief-artifact{margin:17px 0 0 45px;border:1px solid var(--line2);border-left:2px solid var(--amber);background:rgba(214,169,81,.04);padding:14px}.brief-artifact>span,.brief-artifact>strong{display:block}.brief-artifact>span{color:var(--amber);font:8px "Arial Narrow";letter-spacing:.18em}.brief-artifact>strong{font-size:11px;margin:8px 0}.brief-artifact p{font-size:10px;line-height:1.7;color:var(--muted)}
+@media(max-width:720px){.ai-workflow{padding:18px 15px}.workflow-steps{grid-template-columns:1fr;border-top:0;border-left:1px solid var(--line)}.flow-step{border-right:0;border-bottom:1px solid var(--line);min-height:65px;padding:12px 15px}.flow-step:before{width:2px;height:0;left:-2px;top:0}.flow-step.done:before,.flow-step.active:before{width:2px;height:100%}.workflow-title>span{max-width:110px;text-align:right}.brief-artifact{margin-left:0}}

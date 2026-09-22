@@ -1,0 +1,266 @@
+/*
+ * AI CEO OS Workbench — readable executive type scale
+ * Loaded last so every workspace uses one consistent, legible hierarchy.
+ */
+
+:root{
+  --type-page:32px;
+  --type-section:23px;
+  --type-card:17px;
+  --type-body:15px;
+  --type-label:13px;
+  --type-meta:12px;
+  --type-micro:11px;
+}
+
+html{font-size:17px}
+body{font-size:17px;line-height:1.65;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font-size:14px;line-height:1.5}
+button{min-height:40px}
+small{font-size:var(--type-meta)}
+.eyebrow{font-size:var(--type-micro);line-height:1.4}
+
+/* Permanent navigation and system bar */
+.sidebar{padding-inline:18px}
+.nav-item{height:55px;font-size:16px;grid-template-columns:30px 1fr auto}
+.nav-item b{font-size:11px;padding:3px 7px}
+.sidebar-footer strong{font-size:16px}
+.sidebar-footer small{font-size:11px;line-height:1.5}
+.brand>span{font-size:11px}
+.topbar h1{font-size:27px}
+.date{font-size:14px}
+.data-badge,.mode-btn{font-size:12px;min-height:40px}
+body.workspace-pages-ready:not([data-workspace-route="overview"]) .topbar h1{font-size:20px}
+
+/* View heading */
+.workspace-page-number{font-size:13px}
+.workspace-breadcrumb{font-size:13px}
+.workspace-page-eyebrow{font-size:11px}
+.workspace-page-copy h2{font-size:var(--type-page);line-height:1.3}
+.workspace-page-description{font-size:15px;line-height:1.8}
+.workspace-page-actions button,.workspace-owner-pill{min-height:42px;padding:9px 15px;font-size:13px}
+.workspace-owner-pill{font-size:11px}
+
+/* Homepage and shared cards */
+.brief-copy h2{font-size:29px;line-height:1.55}
+.brief-copy>p{font-size:15px;line-height:1.85}
+.evidence-row{font-size:13px;line-height:1.6}
+.outline-btn,.primary{font-size:14px;min-height:42px}
+.section-heading h3,.track-head h3{font-size:var(--type-section)}
+.section-heading>p,.section-heading>span,.track-head>span{font-size:14px}
+.assistant-head h3,.workflow-title h3{font-size:21px}
+.assistant-head>div>p:last-child,.assistant-status small,.assistant-meta,.ai-message p{font-size:13px;line-height:1.7}
+.assistant-status span,.assistant-head-actions>button,.monitor-foot,.monitor-foot button{font-size:12px}
+.assistant-input input,.assistant-input button,.assistant-prompt{font-size:14px}
+.flow-step b,.workflow-title>span{font-size:12px}
+.flow-step strong{font-size:14px}
+.flow-step small,.brief-artifact p{font-size:12px}
+.brief-artifact>span{font-size:11px}.brief-artifact>strong{font-size:14px}
+
+.biz{min-height:150px;padding:20px 16px 17px}
+.biz span,.biz em{font-size:12px;line-height:1.5}
+.biz strong{font-size:16px;line-height:1.55}
+.business-focus{grid-template-columns:95px 210px 1fr;min-height:58px;font-size:14px;line-height:1.65}
+.monitor-title h4{font-size:18px}
+.monitor-title>span,.monitor-item>span{font-size:11px}
+.monitor-item strong{font-size:14px}.monitor-item small,.monitor-loading{font-size:12px;line-height:1.6}
+.orbit-node b{font-size:13px}.orbit-node span{font-size:15px}.orbit-node small{font-size:12px}
+.command-box input{font-size:15px}
+.command-box button,.parsed button{font-size:13px;min-height:40px}
+.parsed span{font-size:12px}.parsed strong{font-size:14px}
+.inbox-item>span{font-size:12px}.inbox-item strong{font-size:15px}.inbox-item small{font-size:12px;line-height:1.5}
+.task{min-height:64px;padding-block:15px}
+.task time{font-size:13px}.task strong{font-size:15px}.task small,.task em{font-size:12px}
+.metrics strong{font-size:29px}.metrics span{font-size:13px}.metrics small{font-size:12px}
+
+/* Calendar */
+.calendar-toolbar h3{font-size:var(--type-section)}
+.calendar-toolbar>div>p:last-child{font-size:14px;line-height:1.75}
+.calendar-actions button,.day-agenda>button{height:42px;font-size:14px}
+.calendar-actions strong{font-size:17px}
+.calendar-summary span,.calendar-summary small{font-size:12px}
+.calendar-summary strong{font-size:24px}
+.calendar-summary .next-event strong{font-size:16px}
+.weekday-row span{font-size:12px}
+.calendar-day{min-height:102px;padding:9px}
+.day-number{width:30px;height:30px;font-size:14px}
+.day-event{font-size:12px;line-height:1.45;padding:5px 7px}
+.day-more{font-size:11px}
+.agenda-date span,.agenda-date small{font-size:12px}
+.agenda-item time{font-size:14px}
+.agenda-item strong{font-size:16px}
+.agenda-item small,.agenda-empty{font-size:12px;line-height:1.65}
+.calendar-form-card label span{font-size:14px}
+.calendar-form-card input,.calendar-form-card select,.calendar-form-card textarea{font-size:15px}
+
+/* Channel center */
+.channel-tabs button{font-size:15px;padding:11px 13px}
+.channel-filter input{font-size:15px}.channel-filter span{font-size:13px}
+.channel-row{min-height:104px;padding:22px 17px}
+.channel-row strong{font-size:18px}.channel-row small,.channel-row>span{font-size:14px}
+.channel-header h4{font-size:28px}.channel-header>div>span{font-size:14px;line-height:1.6}
+.verified b{font-size:15px}.verified small{font-size:13px}
+.channel-kpis span{font-size:14px}.channel-kpis strong{font-size:30px}.channel-kpis small{font-size:13px;line-height:1.55}
+.channel-detail h5{font-size:18px}.progress-head span{font-size:14px}
+.pipe b{font-size:13px}.pipe strong{font-size:17px}.pipe small{font-size:13px;line-height:1.55}
+.timeline time{font-size:14px}.timeline strong{font-size:17px}.timeline span{font-size:13px;line-height:1.65}
+.evidence>p{font-size:14px}.quality-note{font-size:13px;line-height:1.8}
+.channel-actions button,.bulk-toolbar button{font-size:13px;min-height:40px}
+.bulk-toolbar{font-size:13px}
+.channel-placeholder>p{font-size:15px}.placeholder-fields span{font-size:13px}
+
+/* Six-business operating records */
+.bops-section-head .eyebrow{font-size:11px}
+.bops-section-head h3{font-size:25px}
+.bops-section-head>div>p:last-child{font-size:14px}
+.bops-head-actions button{font-size:13px;min-height:42px}
+.bops-command span{font-size:13px}.bops-command strong{font-size:21px}.bops-command small{font-size:12px}
+.bops-nav-item{min-height:86px}
+.bops-nav-copy strong{font-size:16px}.bops-nav-copy small{font-size:12px;line-height:1.5}
+.bops-profile h4{font-size:28px}.bops-profile p{font-size:14px;line-height:1.65}
+.bops-profile-status span,.bops-profile-status small{font-size:12px}.bops-profile-status strong{font-size:17px}
+.bops-privacy-notice strong{font-size:14px}.bops-privacy-notice span{font-size:13px}
+.bops-metric-grid span{font-size:13px}.bops-metric-grid strong{font-size:26px}.bops-metric-grid small{font-size:12px;line-height:1.5}
+.bops-subhead h5,.bops-ledger-head h5{font-size:19px}.bops-subhead>strong{font-size:14px}
+.bops-stage strong{font-size:15px}.bops-stage small{font-size:12px;line-height:1.5}
+.bops-signal-row span,.bops-signal-row small{font-size:12px}.bops-signal-row strong{font-size:20px}
+.bops-ledger-head p{font-size:13px}
+.bops-ledger-actions select,.bops-ledger-actions button{font-size:13px;min-height:40px}
+.bops-record-row{grid-template-columns:100px 120px minmax(280px,1fr) 135px 90px;min-height:122px}
+.bops-record-row>time{font-size:13px}
+.bops-record-type span{font-size:13px}.bops-record-type em{font-size:11px;padding:4px 7px}
+.bops-record-main strong{font-size:16px}.bops-record-main p{font-size:13px}.bops-record-main small{font-size:12px}
+.bops-record-value strong{font-size:16px}.bops-record-value small{font-size:11px}
+.bops-record-actions button{min-height:34px;font-size:12px}
+.bops-empty strong{font-size:16px}.bops-empty p{font-size:13px}
+.bops-modal-code{font-size:12px}.bops-modal-card h3{font-size:25px}.bops-modal-note{font-size:13px}
+.bops-stage-field label,.bops-modal-card label{font-size:14px}
+.bops-form-grid label>span{font-size:11px}
+.bops-modal input,.bops-modal select,.bops-modal textarea{font-size:15px;min-height:43px}
+.bops-delete-card>p:not(.bops-modal-code){font-size:13px}
+
+/* Data-entry surfaces need a deliberately larger scale than dense dashboards. */
+.bops-modal-card{width:min(980px,100%);padding:40px 42px 36px}
+.bops-modal-close{right:22px;top:18px;font-size:34px;min-width:44px;min-height:44px}
+.bops-modal-code{margin-bottom:13px;font-size:14px;line-height:1.4;letter-spacing:.2em}
+.bops-modal-card h3{font-size:32px;line-height:1.35;letter-spacing:.015em}
+.bops-modal-note{margin:13px 0 28px;font-size:16px;line-height:1.75}
+.bops-stage-field{margin-bottom:22px}
+.bops-stage-field label,.bops-modal-card label{font-size:17px;line-height:1.55}
+.bops-stage-field select{margin-top:10px}
+.bops-form-grid{gap:20px 22px}
+.bops-form-grid label>span{right:12px;top:2px;font-size:14px}
+.bops-form-grid input,.bops-form-grid select,.bops-form-grid textarea,.bops-wide-field textarea,
+.bops-modal input,.bops-modal select,.bops-modal textarea{
+  min-height:52px;
+  margin-top:10px;
+  padding:12px 15px;
+  font-size:18px;
+  line-height:1.55;
+}
+.bops-modal textarea{min-height:112px}
+.bops-wide-field{margin-top:20px}
+.bops-form-actions{gap:13px;margin-top:28px;padding-top:22px}
+.bops-form-actions button{min-height:50px;padding:11px 20px;font-size:16px;font-weight:550}
+.bops-delete-card>p:not(.bops-modal-code){font-size:16px;line-height:1.75}
+
+/* Data, AI, report, privacy and automation platform */
+.platform-kicker,.platform-panel-head span{font-size:11px}
+.platform-header h3{font-size:25px}
+.platform-header>div>p:last-child{font-size:14px}
+.platform-mode span{font-size:13px}
+.platform-mode button,.platform-panel-head button,.platform-actions button,.data-governance button,.platform-file{font-size:13px;min-height:40px}
+.platform-metrics span,.platform-metrics small{font-size:12px}.platform-metrics strong{font-size:24px}
+.platform-tabs button{font-size:14px;padding:18px 20px 16px}
+.platform-panel-head h4{font-size:21px}.platform-panel-head small{font-size:12px}
+.platform-boundary{font-size:13px}
+.diagnosis-level{font-size:11px}.diagnosis-card h5{font-size:16px}.diagnosis-card p{font-size:13px}.diagnosis-card small,.diagnosis-card b{font-size:12px}
+.report-title span{font-size:11px}.report-title h5{font-size:23px}.report-title time{font-size:12px}
+.report-kpis span{font-size:12px}.report-kpis strong{font-size:23px}
+.report-body h6{font-size:14px}.report-body p{font-size:13px}.report-sheet footer{font-size:12px}
+.automation-controls b{font-size:15px}.automation-controls small{font-size:12px}
+.automation-controls button{font-size:12px;min-height:36px}
+.automation-item>span{font-size:12px}.automation-item strong{font-size:14px}.automation-item small{font-size:12px}.automation-item i{font-size:10px}
+.data-governance b{font-size:15px}.data-governance p{font-size:13px}.data-governance article>span{font-size:12px}
+.platform-message{font-size:13px}
+
+/* Shared modal and decision text */
+.modal-intro{font-size:14px}
+.analysis-grid span{font-size:11px}.analysis-grid strong{font-size:15px}
+.analysis-grid p,.recommendation p{font-size:13px}.recommendation b{font-size:14px}
+.option strong{font-size:16px}.option em{font-size:11px}.option p{font-size:13px}.option small{font-size:12px}
+.toast{font-size:14px}
+
+@media(max-width:1280px){
+  :root{--type-page:29px;--type-section:22px}
+  .bops-record-row{grid-template-columns:86px 108px minmax(230px,1fr) 115px 82px}
+}
+
+@media(max-width:720px){
+  :root{--type-page:26px;--type-section:21px;--type-card:16px;--type-body:14px;--type-label:13px;--type-meta:12px;--type-micro:10px}
+  html{font-size:16px}
+  body{font-size:16px;line-height:1.65}
+  main{padding-inline:16px}
+  .topbar h1,body.workspace-pages-ready:not([data-workspace-route="overview"]) .topbar h1{font-size:20px}
+  .date{font-size:13px}.data-badge,.mode-btn{font-size:11px}
+  .workspace-breadcrumb{font-size:11px}.workspace-page-eyebrow{font-size:10px}
+  .workspace-page-copy h2{font-size:var(--type-page)}
+  .workspace-page-description{font-size:14px}
+  .workspace-page-actions button,.workspace-owner-pill{font-size:12px;min-height:40px}
+  body.workspace-pages-ready .mobile-nav{height:70px}
+  body.workspace-pages-ready .mobile-nav button{flex-basis:72px;min-width:72px;font-size:13px}
+
+  .brief-copy h2{font-size:24px}.brief-copy>p{font-size:14px}.evidence-row{font-size:12px}
+  .assistant-head h3,.workflow-title h3{font-size:20px}
+  .assistant-head>div>p:last-child,.assistant-meta,.ai-message p{font-size:13px}
+  .biz{min-height:148px}.biz strong{font-size:16px}.biz span,.biz em{font-size:12px}
+  .business-focus{grid-template-columns:1fr;font-size:14px}
+  .monitor-title h4{font-size:17px}.monitor-item strong{font-size:14px}.monitor-item small{font-size:12px}
+  .section-heading h3,.track-head h3{font-size:21px}
+  .task strong,.inbox-item strong{font-size:15px}.task small,.inbox-item small{font-size:12px}
+
+  .calendar-toolbar h3{font-size:21px}.calendar-toolbar>div>p:last-child{font-size:13px}
+  .calendar-actions button{font-size:13px}.calendar-summary span,.calendar-summary small{font-size:11px}
+  .weekday-row span{font-size:11px}.day-number{font-size:13px}
+  .agenda-item strong{font-size:15px}.agenda-item small{font-size:12px}
+
+  .channel-tabs button{font-size:13px}.channel-filter input{font-size:14px}.channel-filter span{font-size:12px}
+  .channel-row strong{font-size:16px}.channel-row small,.channel-row>span{font-size:13px}
+  .channel-header h4{font-size:24px}.channel-header>div>span{font-size:13px}
+  .channel-kpis span{font-size:13px}.channel-kpis strong{font-size:26px}.channel-kpis small{font-size:12px}
+  .pipe strong{font-size:15px}.pipe small{font-size:12px}.timeline strong{font-size:15px}.timeline span{font-size:12px}
+
+  .bops-section-head h3{font-size:22px}.bops-section-head>div>p:last-child{font-size:13px}
+  .bops-command span{font-size:12px}.bops-command strong{font-size:19px}.bops-command small{font-size:11px}
+  .bops-nav-copy strong{font-size:15px}.bops-nav-copy small{font-size:11px}
+  .bops-profile h4{font-size:23px}.bops-profile p{font-size:13px}
+  .bops-metric-grid span{font-size:12px}.bops-metric-grid strong{font-size:23px}.bops-metric-grid small{font-size:11px}
+  .bops-stage strong{font-size:14px}.bops-stage small{font-size:11px}
+  .bops-record-row{grid-template-columns:82px 1fr 96px;min-height:0}
+  .bops-record-main strong{font-size:15px}.bops-record-main p{font-size:13px}.bops-record-main small{font-size:11px}
+  .bops-record-type span,.bops-record-row>time{font-size:12px}.bops-record-type em{font-size:10px}
+  .bops-record-value strong{font-size:15px}.bops-record-value small{font-size:10px}
+  .bops-modal-card h3{font-size:22px}.bops-modal-note,.bops-delete-card>p:not(.bops-modal-code){font-size:12px}
+  .bops-stage-field label,.bops-modal-card label{font-size:13px}
+
+  .bops-modal-card{padding:29px 20px 24px}
+  .bops-modal-close{right:12px;top:9px;font-size:32px}
+  .bops-modal-code{font-size:12px}
+  .bops-modal-card h3{font-size:25px}
+  .bops-modal-note{font-size:14px;line-height:1.7}
+  .bops-stage-field label,.bops-modal-card label{font-size:15px}
+  .bops-form-grid label>span{font-size:12px}
+  .bops-form-grid input,.bops-form-grid select,.bops-form-grid textarea,.bops-wide-field textarea,
+  .bops-modal input,.bops-modal select,.bops-modal textarea{min-height:50px;font-size:17px;padding:11px 13px}
+  .bops-form-actions button{min-height:48px;font-size:15px}
+  .bops-delete-card>p:not(.bops-modal-code){font-size:14px}
+
+  .platform-header h3{font-size:22px}.platform-header>div>p:last-child{font-size:13px}
+  .platform-metrics span,.platform-metrics small{font-size:11px}.platform-metrics strong{font-size:21px}
+  .platform-tabs button{font-size:13px;padding-inline:13px}
+  .platform-panel-head h4{font-size:19px}.platform-boundary{font-size:12px}
+  .diagnosis-card h5{font-size:15px}.diagnosis-card p{font-size:12px}.diagnosis-card small,.diagnosis-card b{font-size:11px}
+  .automation-controls b{font-size:14px}.automation-controls small,.automation-item small{font-size:11px}
+  .automation-item strong{font-size:13px}.data-governance b{font-size:14px}.data-governance p{font-size:12px}
+  .report-title h5{font-size:21px}.report-body p{font-size:12px}
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ai-ceo-os",
+  "version": "0.1.0",
+  "description": "A local-first executive operating system for solo founders and small teams.",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test",
+    "check": "node --check src/auth.mjs && node --check src/store.mjs && node --check src/server.mjs && node --test"
+  }
+}

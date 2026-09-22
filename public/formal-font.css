@@ -1,0 +1,8 @@
+:root{--display:"Microsoft YaHei UI","Microsoft YaHei","DengXian",sans-serif;--body:"Microsoft YaHei UI","Microsoft YaHei","DengXian",sans-serif}
+html,body,button,input,textarea,select{font-family:var(--body)}
+body{font-weight:400;letter-spacing:0}
+.topbar h1{font-family:var(--display);font-weight:600;letter-spacing:.075em}
+.brief-copy h2,.section-heading h3,.track-head h3,.assistant-head h3,.channel-header h4,.workflow-title h3{font-family:var(--display);font-weight:600;letter-spacing:.015em}
+.brief-copy h2{line-height:1.55}.eyebrow{font-family:Arial,"Segoe UI",sans-serif;letter-spacing:.22em}
+.biz strong,.task strong,.inbox-item strong,.channel-row strong{letter-spacing:0;font-weight:500}
+.metrics strong,.channel-kpis strong{font-family:"Segoe UI",Arial,var(--body);font-weight:600}

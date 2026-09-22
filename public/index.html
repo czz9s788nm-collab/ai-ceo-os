@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI CEO OS Executive OS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="brand.css">
+  <link rel="stylesheet" href="premium.css">
+  <link rel="stylesheet" href="workflow.css">
+  <link rel="stylesheet" href="clean-layout.css">
+  <link rel="stylesheet" href="channels.css">
+  <link rel="stylesheet" href="formal-font.css">
+  <link rel="stylesheet" href="channel-extended.css">
+  <link rel="stylesheet" href="manage-channels.css">
+  <link rel="stylesheet" href="executive-ledger.css">
+  <link rel="stylesheet" href="risk-trend.css">
+  <link rel="stylesheet" href="layout-refinement.css">
+  <link rel="stylesheet" href="calendar.css?v=20260914-2">
+  <link rel="stylesheet" href="business-operations.css">
+  <link rel="stylesheet" href="workspace-platform.css">
+  <link rel="stylesheet" href="workspace-pages.css">
+  <link rel="stylesheet" href="readability.css">
+  <link rel="stylesheet" href="executive-os-v3.css?v=20260914-7">
+  <link rel="stylesheet" href="date-picker-only.css?v=20260914-1">
+  <link rel="stylesheet" href="online-auth.css?v=20260914-2">
+</head>
+<body class="online-locked">
+  <section class="online-auth" id="onlineAuth" aria-labelledby="onlineAuthTitle">
+    <div class="online-auth-card">
+      <div class="online-auth-brand">
+        <img src="assets/ai-ceo-os-logo.svg?v=20260914-2" alt="AI CEO OS 标志">
+        <div><strong>AI CEO OS</strong><span>PRIVATE EXECUTIVE OPERATING SYSTEM</span></div>
+      </div>
+      <p class="online-auth-kicker">OWNER ACCESS · Owner个人工作台</p>
+      <h1 id="onlineAuthTitle">登录总控工作台</h1>
+      <p class="online-auth-intro">业务、渠道、日程与经营数据均为私有内容。登录后，电脑与手机将使用同一份服务器数据。</p>
+      <form id="onlineAuthForm" autocomplete="on">
+        <label><span>账号</span><input id="onlineUsername" name="username" autocomplete="username" value="AiCeoOs888" required></label>
+        <label><span>密码</span><input id="onlinePassword" name="password" type="password" autocomplete="current-password" required></label>
+        <button type="submit" id="onlineAuthSubmit">登录工作台</button>
+        <p class="online-auth-message" id="onlineAuthMessage" role="status"></p>
+      </form>
+      <div class="online-auth-security"><i></i><span>HTTPS 加密连接 · 单一老板账号 · 多端同步存储</span></div>
+    </div>
+    <footer class="online-auth-footer"><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">辽ICP备2026018492号-1</a></footer>
+  </section>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"><img src="assets/ai-ceo-os-logo.svg" alt="AI CEO OS 标志"></div><div class="brand-copy"><strong>AI CEO OS</strong><span>EXECUTIVE OS</span></div></div>
+      <nav id="nav">
+        <button class="nav-item active" data-target="overview"><i data-os-icon="today"></i><span><b>今日总控</b><small>Today</small></span></button>
+        <button class="nav-item" data-target="business"><i data-os-icon="portfolio"></i><span><b>业务组合</b><small>Portfolio</small></span></button>
+        <button class="nav-item" data-target="assistant"><i data-os-icon="intelligence"></i><span><b>AI 决策</b><small>Intelligence</small></span><em>3</em></button>
+        <button class="nav-item" data-target="schedule"><i data-os-icon="agenda"></i><span><b>日程执行</b><small>Agenda</small></span></button>
+        <button class="nav-item" data-target="reports"><i data-os-icon="reports"></i><span><b>经营报告</b><small>Reports</small></span></button>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="avatar">曲</div><div><strong>Owner</strong><small>OWNER · 全局权限</small><span class="online-sync-state" id="onlineSyncState">正在连接服务器…</span></div><button class="online-logout" id="onlineLogout" type="button">退出</button>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar" id="overview">
+        <div class="os-masthead"><strong>AI CEO OS</strong><span>EXECUTIVE OS</span></div>
+        <div class="os-global-time"><span id="today"></span><span>北京 <b id="beijingTime">--:--</b></span><span>Berlin <b id="berlinTime">--:--</b></span></div>
+        <div class="top-actions"><button class="os-language" id="languageToggle" type="button"><b>中</b><span>EN</span></button><button id="modeToggle" class="mode-btn"><span></span><b>PRIVATE</b><em>DEMO</em></button><span class="os-sync"><i></i>VERIFIED SYNC</span></div>
+      </header>
+
+      <section class="briefing" id="briefing">
+        <div class="section-index">01</div>
+        <div class="brief-copy">
+          <p class="eyebrow">AI EXECUTIVE BRIEFING</p>
+          <h2>Owner，今天最重要的不是做更多，<br>而是<span>先锁定首批渠道验证。</span></h2>
+          <p>系统发现德国就业项目的首批渠道仍未形成明确组合，同时轴承库存盘点已进入可执行阶段。建议将今日最高优先级放在“渠道确认与回款风险核验”。</p>
+          <div class="evidence-row"><span>置信度 92%</span><span>涉及 2 项业务</span><span>基于 17 条模拟经营信号</span><span id="monitorSummary">每日监控任务同步中</span></div>
+        </div>
+        <button class="outline-btn" id="viewAnalysis">查看完整分析 →</button>
+      </section>
+
+      <section class="ai-assistant" id="assistant">
+        <div class="assistant-head">
+          <div><p class="eyebrow">AI EXECUTIVE ASSISTANT</p><h3>Owner的 AI 总控助理</h3><p>跨业务理解、经营分析、任务推进与决策支持</p></div>
+          <div class="assistant-head-actions"><div class="assistant-status"><i></i><span>在线</span><small>已读取 6 项业务的匿名化经营上下文</small></div><button id="toggleAssistant">展开助理</button></div>
+        </div>
+        <div class="assistant-expand" id="assistantExpand"><div class="assistant-body">
+          <div class="assistant-dialogue" id="assistantDialogue">
+            <div class="ai-message"><span>AI</span><div><strong>Owner，我已经完成今日经营扫描。</strong><p>德国就业项目有 1 项 P0 决策；分销业务有 2 项库存动作适合本周推进。您可以直接交办，也可以让我先做跨业务优先级判断。</p></div></div>
+          </div>
+          <div class="assistant-side">
+            <p class="eyebrow">SUGGESTED ACTIONS</p>
+            <button class="assistant-prompt" data-prompt="帮我判断今天六项业务的优先级">判断今日业务优先级 <span>→</span></button>
+            <button class="assistant-prompt" data-prompt="分析国际人才项目首批渠道的风险">分析德国渠道风险 <span>→</span></button>
+            <button class="assistant-prompt" data-prompt="把本周未完成工作整理成执行计划">整理未完成工作 <span>→</span></button>
+          </div>
+        </div>
+        <div class="assistant-input"><span>✦</span><input id="assistantInput" placeholder="直接问我：今天先做什么？哪个业务有风险？"><button id="sendAssistant">发送</button></div>
+        <div class="assistant-meta"><span>经营上下文已连接</span><span>回答依据可追溯</span><span>涉及决策时由Owner最终确认</span></div></div>
+      </section>
+
+      <section class="ai-workflow" id="aiWorkflow">
+        <div class="workflow-title"><p class="eyebrow">AI OPERATING FLOW</p><h3>AI 助理执行工作流</h3><span id="workflowState">等待Owner发起</span></div>
+        <div class="workflow-steps">
+          <div class="flow-step active"><b>01</b><strong>理解经营问题</strong><small>识别业务、目标与风险</small></div>
+          <div class="flow-step"><b>02</b><strong>调用经营上下文</strong><small>汇总任务、日程与信号</small></div>
+          <div class="flow-step"><b>03</b><strong>生成建议方案</strong><small>给出依据与置信度</small></div>
+          <div class="flow-step"><b>04</b><strong>Owner确认</strong><small>关键决策不越权</small></div>
+          <div class="flow-step"><b>05</b><strong>进入执行</strong><small>生成任务与复盘节点</small></div>
+        </div>
+      </section>
+
+      <section class="business-section" id="business">
+        <div class="section-heading"><div><p class="eyebrow">BUSINESS CENTER</p><h3>业务中心</h3></div><p>六项业务总览与每日监控</p></div>
+        <div class="business-center-grid"><div class="business-main">
+        <div class="business-strip" id="businessStrip">
+          <button class="biz active" data-biz="国际人才项目" data-note="首批渠道组合待Owner确认，回款节点需前置核验"><span>集团 · 核心现金流</span><strong>国际人才项目</strong><em>渠道验证中</em><i>78</i></button>
+          <button class="biz" data-biz="分销业务" data-note="库存型号与库龄盘点推进中，优先识别快速变现品类"><span>个人业务</span><strong>分销业务</strong><em>库存盘点中</em><i>64</i></button>
+          <button class="biz" data-biz="供应链业务" data-note="9月团购报价方案待审核，保持独立销售漏斗"><span>集团 · 增长业务</span><strong>供应链业务</strong><em>方案准备中</em><i>55</i></button>
+          <button class="biz" data-biz="国际增长业务" data-note="单市场与单品类试验条件尚未完全锁定"><span>集团 · 战略业务</span><strong>国际增长业务</strong><em>机会筛选中</em><i>42</i></button>
+          <button class="biz" data-biz="内容与 AI 业务" data-note="围绕个人IP与线索管理搭建首轮内容样板"><span>集团 · 增长引擎</span><strong>内容与 AI 业务</strong><em>内容测试中</em><i>61</i></button>
+          <button class="biz" data-biz="健康创新业务" data-note="独立运营，健康隐私与宣传合规作为前置条件"><span>个人业务 · 独立</span><strong>健康创新业务</strong><em>合规准备中</em><i>36</i></button>
+        </div>
+        <div class="business-focus"><span>当前焦点</span><strong id="bizTitle">国际人才项目</strong><p id="bizNote">首批渠道组合待Owner确认，回款节点需前置核验</p></div>
+        </div><aside class="monitor-center">
+          <div class="monitor-title"><div><p class="eyebrow">CHATGPT MONITORING</p><h4>每日监控任务</h4></div><span id="monitorSync">同步中</span></div>
+          <div id="monitorList"><div class="monitor-loading">正在读取 ChatGPT / Codex 自动任务…</div></div>
+          <div class="monitor-foot"><span>本机只读同步</span><button id="refreshMonitors">刷新</button></div>
+        </aside></div>
+      </section>
+
+      <section class="calendar-workspace" id="schedule">
+        <div class="calendar-toolbar">
+          <div><p class="eyebrow">TASK & CALENDAR</p><h3>任务与日程中心</h3><p>按月查看每天的工作安排、固定任务与完成状态</p></div>
+          <div class="calendar-actions"><button id="calendarPrev" aria-label="上个月">←</button><strong id="calendarMonth"></strong><button id="calendarNext" aria-label="下个月">→</button><button id="calendarToday">回到今天</button><button id="enableNotifications">开启提醒</button><button class="calendar-add" id="addCalendarEvent">＋ 新增日程</button></div>
+        </div>
+        <div class="calendar-summary"><div><span>未来 7 天</span><strong id="upcomingCount">—</strong><small>项工作安排</small></div><div><span>逾期未完成</span><strong id="overdueCount">—</strong><small>仅统计一次性日程</small></div><div class="next-event"><span>下一项工作</span><strong id="nextEventTitle">暂无安排</strong><small id="nextEventTime">—</small></div></div>
+        <div class="calendar-layout">
+          <div class="month-board">
+            <div class="weekday-row"><span>周一</span><span>周二</span><span>周三</span><span>周四</span><span>周五</span><span>周六</span><span>周日</span></div>
+            <div class="calendar-days" id="calendarDays"></div>
+          </div>
+          <aside class="day-agenda"><div class="agenda-date"><span id="agendaDate"></span><strong id="agendaDay"></strong><small id="agendaCount"></small></div><div class="agenda-list" id="agendaList"></div><button id="addSelectedDay">＋ 添加当天日程</button></aside>
+        </div>
+      </section>
+
+      <section class="channel-center" id="channels">
+        <div class="section-heading"><div><p class="eyebrow">CHANNEL OPERATIONS</p><h3>渠道管理</h3></div><div class="channel-actions"><button id="publicView">对外展示视图</button><button id="manageChannels">管理渠道</button><button id="addChannel">＋ 新增渠道</button></div></div>
+        <div class="bulk-toolbar" id="bulkToolbar"><span>管理模式：点击渠道进行选择</span><div><button id="selectAllChannels">选择全部自建渠道</button><button id="deleteSelectedChannels">删除所选</button><button id="exitManageChannels">完成</button></div></div>
+        <div class="channel-executive" id="channelExecutive"><div class="executive-metrics"><div><span>已确认线索/客户</span><strong id="summaryLeads">27</strong><small>只统计已录入数字</small></div><div><span>已确认签约</span><strong id="summarySigned">—</strong><small>未提供不记为 0</small></div><div><span>已确认交付</span><strong id="summaryDelivered">—</strong><small>以交付结果为准</small></div><div><span>已确认回款</span><strong id="summaryRevenue">—</strong><small>等待财务凭证</small></div><div><span>待处理风险</span><strong id="summaryRisks">3</strong><small>按渠道风险项统计</small></div><div><span>数据完整度</span><strong id="summaryCompleteness">—</strong><small>六项业务综合</small></div></div><div class="business-ledger" id="businessLedger"></div></div>
+        <div class="channel-layout">
+          <div class="channel-list">
+            <div class="channel-tabs" id="channelTabs"><button class="active" data-filter="all">全部</button><button data-filter="germany">国际人才项目</button><button data-filter="bearing">轴承</button><button data-filter="supply">供应链</button><button data-filter="trade">国际贸易</button><button data-filter="content">内容与AI</button><button data-filter="gene">健康创新业务</button></div>
+            <div class="channel-filter"><input id="channelSearch" placeholder="搜索渠道或项目"><span id="channelCount">7 条渠道记录</span></div>
+            <button class="channel-row active" data-channel="yuejiao" data-business="germany"><i></i><div><strong>示例教育服务机构</strong><small>示例教育伙伴 · 德国双元制</small></div><span>协议审核中</span><b>→</b></button>
+            <button class="channel-row" data-channel="dalian" data-business="germany"><i class="pending-dot"></i><div><strong>大连工信团队</strong><small>国际人才项目 · 首批试点团队</small></div><span>资料待录入</span><b>→</b></button>
+            <button class="channel-row" data-channel="bearing" data-business="bearing"><i class="empty-dot"></i><div><strong>轴承客户与经销渠道</strong><small>个人业务 · 渠道池</small></div><span>待录入</span><b>→</b></button>
+            <button class="channel-row" data-channel="supply" data-business="supply"><i class="empty-dot"></i><div><strong>企业团购与分销渠道</strong><small>集团业务 · 独立销售漏斗</small></div><span>待录入</span><b>→</b></button>
+            <button class="channel-row" data-channel="trade" data-business="trade"><i class="empty-dot"></i><div><strong>国际贸易目标渠道</strong><small>集团业务 · 市场与客户</small></div><span>待录入</span><b>→</b></button>
+            <button class="channel-row" data-channel="content" data-business="content"><i class="empty-dot"></i><div><strong>内容与 AI 业务 线索渠道</strong><small>集团业务 · 小红书与私域</small></div><span>待录入</span><b>→</b></button>
+            <button class="channel-row" data-channel="gene" data-business="gene"><i class="empty-dot"></i><div><strong>健康创新业务独立渠道</strong><small>个人业务 · 隐私隔离</small></div><span>待录入</span><b>→</b></button>
+          </div>
+          <div class="channel-detail" id="yuejiaoDetail">
+            <div class="channel-header"><div><p class="eyebrow">KEY CHANNEL · 2026</p><h4>示例教育伙伴｜德国双元制首批参与者</h4><span>证据来源：微信群聊、简历合集、项目书</span></div><div class="verified"><b>资料已核验</b><small id="yuejiaoUpdated">更新于 2026-08-27</small><button id="editYuejiaoRecord">更新经营数据</button></div></div>
+            <div class="channel-kpis">
+              <div><span>首批简历</span><strong id="yuejiaoLeads">27</strong><small class="confirmed">群聊明确确认</small></div>
+              <div><span>补充候选人</span><strong>1</strong><small class="pending">待确认是否并入首批</small></div>
+              <div><span>双元制费用</span><strong>6 万</strong><small class="pending">计费口径待合同核对</small></div>
+              <div><span>正式签约</span><strong id="yuejiaoSigned">待确认</strong><small class="pending">未取得双方盖章件</small></div>
+              <div><span>已赴德/已入学</span><strong id="yuejiaoDelivered">未提供</strong><small>不自动记为 0</small></div>
+              <div><span>回款</span><strong id="yuejiaoRevenue">未提供</strong><small>待财务凭证核对</small></div>
+            </div>
+            <div class="channel-progress">
+              <div class="progress-head"><h5>经营进程</h5><span>当前阶段：合作协议审核与交付准备</span></div>
+              <div class="pipeline">
+                <div class="pipe done"><b>01</b><strong>渠道建立</strong><small>群聊与合作框架已建立</small></div>
+                <div class="pipe done"><b>02</b><strong>首批资料</strong><small>27 份中文简历</small></div>
+                <div class="pipe current"><b>03</b><strong>协议审核</strong><small>最终版已发，仍在协商</small></div>
+                <div class="pipe"><b>04</b><strong>手续与付款</strong><small>群内列为下一步</small></div>
+                <div class="pipe"><b>05</b><strong>匹配与交付</strong><small>结果数量待回填</small></div>
+              </div>
+            </div>
+            <div class="channel-bottom">
+              <div class="timeline"><h5>关键记录</h5>
+                <div><time>08-21</time><p><strong>费用明细材料进入群聊</strong><span>《示例项目费用明细》</span></p></div>
+                <div><time>08-22</time><p><strong>确认收到首批 27 份简历</strong><span>群内确认项目顺利推进；下一步为手续、合作协议与付款</span></p></div>
+                <div><time>08-22</time><p><strong>双元制费用回复为 6 万元</strong><span>具体包含范围与计费单位等待正式合同核对</span></p></div>
+                <div><time>08-26</time><p><strong>最终版协议与服务内容发出</strong><span>请渠道审核，仍保留补充与协商空间</span></p></div>
+              </div>
+              <div class="evidence"><h5>材料与数据质量</h5><p><span>参与者资料合集</span><b>示例数据</b></p><p><span>示例成员 A简历</span><b>待补充</b></p><p><span>示例成员 B补充资料</span><b>已关联</b></p><p><span>项目书</span><b>示例文档</b></p><div class="quality-note">学员姓名与联系方式仅在老板内部视图使用；对外展示仅显示汇总人数和阶段。</div></div>
+            </div>
+          </div>
+          <div class="channel-detail channel-placeholder" id="channelPlaceholder">
+            <div class="placeholder-code">CHANNEL RECORD</div><h4 id="placeholderTitle">渠道资料待录入</h4><p id="placeholderText">当前业务已经建立独立渠道入口，但尚未获得经过确认的合作方、客户数量、合同、回款与交付数据。</p><div class="placeholder-fields" id="placeholderFields"><span>合作方</span><span>合作阶段</span><span>线索/客户数</span><span>合同与回款</span><span>交付结果</span><span>下一步动作</span></div><div class="custom-performance" id="customPerformance"><div><span>线索/客户</span><strong id="customLeads">—</strong></div><div><span>已签约</span><strong id="customSigned">—</strong></div><div><span>已交付</span><strong id="customDelivered">—</strong></div><div><span>签约转化率</span><strong id="customConversion">—</strong></div><div><span>已回款</span><strong id="customRevenue">—</strong></div><div><span>数据完整度</span><strong id="customCompleteness">—</strong></div></div><div class="custom-archive" id="customArchive"><section><div class="archive-head"><div><span>PROGRESS LOG</span><h5>经营时间轴</h5></div><button id="quickProgressUpdate">＋ 更新进程</button></div><div class="progress-history" id="progressHistory"></div></section><section><div class="archive-head"><div><span>DOCUMENT INDEX</span><h5>经营材料索引</h5></div><button id="addChannelDocument">＋ 添加材料</button></div><div class="document-index" id="documentIndex"></div></section></div><div class="placeholder-actions"><button id="startChannelEntry">开始录入这个渠道</button><button id="editChannelRecord">更新经营进程</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="risk-trend-center" id="riskTrend">
+        <div class="risk-register"><div class="section-heading"><div><p class="eyebrow">RISK REGISTER</p><h3>经营风险台账</h3></div><div class="risk-actions"><span id="activeRiskCount">3 项待处理</span><button id="addRisk">＋ 新增风险</button></div></div><div class="risk-list" id="riskList"></div></div>
+        <div class="monthly-trend"><div class="section-heading"><div><p class="eyebrow">MONTHLY PERFORMANCE</p><h3>月度经营趋势</h3></div><button id="updateMonthlyData">更新月度数据</button></div><p class="trend-note">只显示已经确认的经营数据；空白月份不补零、不生成虚假趋势。</p><div class="trend-table" id="trendTable"></div></div>
+      </section>
+
+      <section class="decision-track" id="decision">
+        <div class="track-head"><div><p class="eyebrow">DECISION ORBIT</p><h3>经营决策轨道</h3></div><span id="trackStatus">等待Owner决策</span></div>
+        <div class="orbit">
+          <div class="orbit-line"></div>
+          <button class="orbit-node done" data-step="risk"><b>01</b><span>风险已识别</span><small>渠道组合不清晰</small></button>
+          <button class="orbit-node current" data-step="advice"><b>02</b><span>AI 建议</span><small>锁定首批验证</small></button>
+          <button class="orbit-node" data-step="decide"><b>03</b><span>我来决策</span><small>3 个方案待选择</small></button>
+          <button class="orbit-node" data-step="tasks"><b>04</b><span>任务与日程</span><small>确认后自动生成</small></button>
+          <button class="orbit-node" data-step="result"><b>05</b><span>执行与结果</span><small>持续追踪</small></button>
+        </div>
+      </section>
+
+      <div class="lower-grid">
+        <section class="command-panel">
+          <div class="section-heading"><div><p class="eyebrow">ONE-LINE COMMAND</p><h3>一句话交办</h3></div><span>AI 自动拆解</span></div>
+          <div class="command-box"><input id="commandInput" value="周五联系示例合作伙伴，跟进项目方案" aria-label="一句话交办内容"><button id="parseCommand">AI 拆解</button></div>
+          <div class="parsed" id="parsedResult">
+            <div><span>任务</span><strong>联系示例合作伙伴</strong></div><div><span>业务</span><strong>国际人才项目</strong></div><div><span>时间</span><strong>本周五 10:00</strong></div><button id="createTask">生成任务</button>
+          </div>
+        </section>
+
+        <section class="decision-inbox">
+          <div class="section-heading"><div><p class="eyebrow">DECISION INBOX</p><h3>待我决策 <em>3</em></h3></div></div>
+          <button class="inbox-item open-decision"><span>P0</span><div><strong>德国首批渠道如何组合？</strong><small>影响首批交付与回款节奏</small></div><i>→</i></button>
+          <button class="inbox-item" data-os-business="bearing"><span>P1</span><div><strong>优先处理哪类轴承库存？</strong><small>库存结构优化</small></div><i>→</i></button>
+          <button class="inbox-item" data-os-business="supply"><span>P1</span><div><strong>9月团购报价是否启动？</strong><small>供应链方案审核</small></div><i>→</i></button>
+        </section>
+
+        <section class="schedule-panel" id="todaySchedule">
+          <div class="section-heading"><div><p class="eyebrow">TODAY'S EXECUTION</p><h3>今日关键任务与日程</h3></div><span id="progressText">1 / 4 已完成</span></div>
+          <div id="taskList">
+            <label class="task done"><input type="checkbox" checked><span></span><time>09:30</time><div><strong>复盘国际人才项目渠道名单</strong><small>国际人才项目 · 60分钟</small></div><em>P0</em></label>
+            <label class="task"><input type="checkbox"><span></span><time>11:30</time><div><strong>核验资料与回款节点</strong><small>老板总控 · 45分钟</small></div><em>P0</em></label>
+            <label class="task"><input type="checkbox"><span></span><time>14:00</time><div><strong>轴承库存型号与库龄盘点</strong><small>分销业务 · 90分钟</small></div><em>P1</em></label>
+            <label class="task"><input type="checkbox"><span></span><time>16:30</time><div><strong>本周经营复盘</strong><small>全局业务 · 60分钟</small></div><em>P1</em></label>
+          </div>
+        </section>
+
+        <section class="metric-panel" id="reports">
+          <div class="section-heading"><div><p class="eyebrow">EXECUTIVE SIGNALS</p><h3>本周经营信号</h3></div><span>DEMO</span></div>
+          <div class="metrics"><div><strong>17</strong><span>有效线索</span><small>较上周 +21%</small></div><div><strong>6</strong><span>推进中渠道</span><small>2 个需关注</small></div><div><strong>3</strong><span>待决策事项</span><small>1 个 P0</small></div><div><strong>72%</strong><span>本周执行率</span><small>目标 85%</small></div></div>
+          <div class="signal-bars"><i style="--w:82%"></i><i style="--w:61%"></i><i style="--w:44%"></i><i style="--w:72%"></i></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal" id="analysisModal" aria-hidden="true">
+    <div class="modal-card"><button class="close">×</button><p class="eyebrow">AI EVIDENCE TRACE</p><h3>为什么今天要先锁定首批渠道？</h3><div class="analysis-grid"><div><span>信号 01</span><strong>渠道组合尚未确定</strong><p>3 个候选渠道的资源质量、负责人和下一步动作不完整。</p></div><div><span>信号 02</span><strong>回款节点存在前置依赖</strong><p>首批交付条件未锁定，将影响回款节奏与退款风险判断。</p></div><div><span>信号 03</span><strong>资源窗口本周有效</strong><p>广东教育服务体系与大连高校资源适合进行小规模验证。</p></div></div><div class="recommendation"><b>AI 推荐</b><p>先确定“广东教育服务体系 + 大连高校资源”的首批验证组合，限定人数与成本，并设置 7 日复盘节点。</p></div><button class="primary open-decision">进入决策 →</button></div>
+  </div>
+
+  <div class="modal" id="decisionModal" aria-hidden="true">
+    <div class="modal-card decision-card"><button class="close">×</button><p class="eyebrow">CEO DECISION</p><h3>国际人才项目首批渠道如何组合？</h3><p class="modal-intro">以下方案基于模拟数据生成，仅用于展示 AI 决策流程。</p><div class="options">
+      <label class="option selected"><input type="radio" name="plan" value="A" checked><span>A</span><div><strong>锁定双渠道小规模验证 <em>AI 推荐</em></strong><p>广东教育服务体系 + 大连高校资源，各自限定首批名额。</p><small>优点：速度与风险平衡　风险：需要同时协调两方</small></div></label>
+      <label class="option"><input type="radio" name="plan" value="B"><span>B</span><div><strong>只验证广东渠道</strong><p>集中资源跑通单一渠道，再复制到其他区域。</p><small>优点：管理简单　风险：样本单一</small></div></label>
+      <label class="option"><input type="radio" name="plan" value="C"><span>C</span><div><strong>暂缓渠道，优先优化交付</strong><p>先完善交付流程与退款机制，再启动招生验证。</p><small>优点：交付更稳　风险：错过渠道窗口</small></div></label>
+    </div><button class="primary" id="confirmDecision">确认方案并生成执行计划</button></div>
+  </div>
+
+  <div class="modal formal-lock" id="formalModal" aria-hidden="true"><div class="modal-card"><button class="close">×</button><p class="eyebrow">FORMAL MODE</p><h3>正式数据尚未连接</h3><p class="modal-intro">为保护您的真实业务数据，本展示版不连接线上工作台。完成验收后，可单独确认数据接口与权限方案。</p><button class="primary close-action">返回演示模式</button></div></div>
+  <div class="modal" id="channelModal" aria-hidden="true"><div class="modal-card channel-form-card"><button class="close">×</button><p class="eyebrow">CHANNEL RECORD</p><h3 id="channelFormTitle">新增渠道</h3><p class="modal-intro">只录入已经确认的事实；不确定的数字可以留空。</p><form id="channelForm">
+    <div class="form-grid"><label><span>所属业务</span><select name="business" required><option value="germany">国际人才项目</option><option value="bearing">分销业务</option><option value="supply">供应链业务</option><option value="trade">国际增长业务</option><option value="content">内容与 AI 业务</option><option value="gene">健康创新业务</option></select></label><label><span>渠道/合作方名称</span><input name="name" required placeholder="例如：某高校国际交流中心"></label><label><span>当前阶段</span><select name="stage"><option>待录入</option><option>资料待录入</option><option>初步接触</option><option>需求确认</option><option>方案沟通</option><option>协议审核</option><option>已签约</option><option>交付中</option><option>已完成</option></select></label><label><span>负责人</span><input name="owner" placeholder="未确认可留空"></label><label><span>累计线索/客户</span><input name="leads" type="number" min="0" placeholder="未确认可留空"></label><label><span>已签约客户</span><input name="signed" type="number" min="0" placeholder="未确认可留空"></label><label><span>已交付客户</span><input name="delivered" type="number" min="0" placeholder="未确认可留空"></label><label><span>已回款金额</span><input name="revenue" placeholder="例如：¥100,000"></label></div><label class="full-field"><span>下一步动作</span><textarea name="next" placeholder="写明动作、负责人和截止时间"></textarea></label><button class="primary" id="channelFormSubmit" type="submit">保存渠道记录</button>
+  </form></div></div>
+  <div class="modal" id="documentModal" aria-hidden="true"><div class="modal-card document-form-card"><button class="close">×</button><p class="eyebrow">DOCUMENT INDEX</p><h3>添加经营材料</h3><p class="modal-intro">这里只建立材料索引，不上传或对外发送原始文件。</p><form id="documentForm"><div class="form-grid"><label><span>材料类型</span><select name="type" required><option>合作协议</option><option>回款凭证</option><option>学员名单</option><option>项目方案</option><option>沟通纪要</option><option>其他材料</option></select></label><label><span>材料名称</span><input name="name" required placeholder="例如：示例合作协议最终版"></label><label><span>状态</span><select name="status"><option>待补充</option><option>审核中</option><option>已核验</option><option>已归档</option></select></label><label><span>日期</span><input name="date" type="date"></label></div><label class="full-field"><span>备注或文件位置</span><textarea name="note" placeholder="可填写版本、保管位置或核验说明，不填写密码和敏感信息"></textarea></label><button class="primary" type="submit">保存材料索引</button></form></div></div>
+  <div class="modal" id="riskModal" aria-hidden="true"><div class="modal-card risk-form-card"><button class="close">×</button><p class="eyebrow">RISK REGISTER</p><h3>新增经营风险</h3><p class="modal-intro">风险必须对应真实业务事实，并明确负责人和下一步。</p><form id="riskForm"><div class="form-grid"><label><span>所属业务</span><select name="business" required><option value="germany">国际人才项目</option><option value="bearing">分销业务</option><option value="supply">供应链业务</option><option value="trade">国际增长业务</option><option value="content">内容与 AI 业务</option><option value="gene">健康创新业务</option></select></label><label><span>风险等级</span><select name="level"><option>P0</option><option>P1</option><option>P2</option></select></label><label><span>风险事项</span><input name="title" required placeholder="例如：合作协议尚未完成双方确认"></label><label><span>负责人</span><input name="owner" placeholder="未确认可留空"></label><label><span>截止时间</span><input name="due" type="date"></label><label><span>证据状态</span><select name="evidence"><option>待核验</option><option>部分核验</option><option>已核验</option></select></label></div><label class="full-field"><span>应对动作</span><textarea name="action" required placeholder="写明下一步动作与完成标准"></textarea></label><button class="primary" type="submit">加入风险台账</button></form></div></div>
+
+  <div class="modal" id="calendarModal" aria-hidden="true"><div class="modal-card calendar-form-card"><button class="close">×</button><p class="eyebrow">SCHEDULE RECORD</p><h3 id="calendarFormTitle">新增工作日程</h3><p class="modal-intro">选择开始与结束日期，一次建立单日工作或连续多日安排。</p><form id="calendarForm"><div class="form-grid"><label><span>开始日期</span><input name="date" type="date" required></label><label><span>结束日期</span><input name="endDate" type="date" required></label><label><span>开始时间</span><input name="time" type="time" required></label><label><span>工作事项</span><input name="title" required placeholder="例如：复盘国际人才项目渠道名单"></label><label><span>所属业务</span><select name="business"><option>老板总控</option><option>国际人才项目</option><option>分销业务</option><option>供应链业务</option><option>国际增长业务</option><option>内容与 AI 业务</option><option>健康创新业务</option></select></label><label><span>预计时长</span><input name="duration" placeholder="例如：60 分钟或 4 天"></label><label><span>重复安排</span><select name="repeat"><option value="none">不重复</option><option value="daily">每天</option><option value="weekly">每周</option></select></label><label><span>提前提醒</span><select name="reminder"><option value="none">不提醒</option><option value="0">准时提醒</option><option value="5">提前 5 分钟</option><option value="15">提前 15 分钟</option><option value="30">提前 30 分钟</option><option value="60">提前 1 小时</option></select></label></div><p class="calendar-range-hint" id="calendarRangeHint">单日日程请选择相同的开始和结束日期；跨日安排会在月历中连续显示。</p><label class="full-field"><span>备注</span><textarea name="note" placeholder="补充准备材料或完成标准"></textarea></label><div class="calendar-form-actions"><button class="danger" id="deleteCalendarEvent" type="button">删除日程</button><button class="primary" type="submit">保存日程</button></div></form></div></div>
+  <div class="modal" id="deleteCalendarEventModal" aria-hidden="true"><div class="modal-card delete-card"><button class="close">×</button><p class="eyebrow">SCHEDULE CONTROL</p><h3>确认删除这条日程？</h3><p class="modal-intro">删除后将从月历和当天时间轴中移除，不会影响其他固定任务。</p><div class="delete-actions"><button id="cancelDeleteCalendar">取消</button><button id="confirmDeleteCalendar">确认删除</button></div></div></div>
+  <div class="modal" id="monthlyModal" aria-hidden="true"><div class="modal-card monthly-form-card"><button class="close">×</button><p class="eyebrow">MONTHLY PERFORMANCE</p><h3>更新月度经营数据</h3><p class="modal-intro">未确认的数字请留空；留空不会自动记为零。</p><form id="monthlyForm"><div class="form-grid"><label><span>月份</span><input name="month" type="month" required></label><label><span>线索/客户</span><input name="leads" type="number" min="0"></label><label><span>已签约</span><input name="signed" type="number" min="0"></label><label><span>已交付</span><input name="delivered" type="number" min="0"></label><label><span>已回款金额</span><input name="revenue" type="number" min="0"></label><label><span>数据说明</span><input name="note" placeholder="例如：来源于已核验渠道汇总"></label></div><button class="primary" type="submit">保存月度数据</button></form></div></div>
+  <div class="modal" id="deleteChannelModal" aria-hidden="true"><div class="modal-card delete-card"><button class="close">×</button><p class="eyebrow">DELETE CONFIRMATION</p><h3>确认删除所选渠道？</h3><p class="modal-intro" id="deleteChannelText">删除后将从本机展示版移除所选自建渠道。系统预置渠道不会被删除。</p><div class="delete-actions"><button id="cancelDelete">取消</button><button id="confirmDeleteChannels">确认删除</button></div></div></div>
+  <div class="toast" id="toast">执行计划已生成</div>
+
+  <nav class="mobile-nav"><button data-target="overview" class="active"><i data-os-icon="today"></i><span>今日</span><small>Today</small></button><button data-target="business"><i data-os-icon="portfolio"></i><span>业务</span><small>Portfolio</small></button><button data-target="assistant"><i data-os-icon="intelligence"></i><span>AI 决策</span><small>Intelligence</small></button><button data-target="schedule"><i data-os-icon="agenda"></i><span>日程</span><small>Agenda</small></button></nav>
+  <script type="module" src="online-auth.js?v=20260914-2"></script>
+</body>
+</html>
